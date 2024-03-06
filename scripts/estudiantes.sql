@@ -45,5 +45,6 @@ VALUES ('8901234567', 'Sofía', 'Díaz', 'sofia@example.com', '2001-02-10');
 SELECT cedula,nombre from estudiantes
 SELECT nombre from estudiantes WHERE cedula LIKE '17%'
 SELECT nombre,apellido from estudiantes WHERE nombre LIKE 'A%'
+SELECT nombre from estudiantes WHERE nombre LIKE 'A%'
 
 SELECT * from estudiantes
