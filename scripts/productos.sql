@@ -34,5 +34,5 @@ VALUES (107, 'Pantalones Cortos', 24.99, 40);
 INSERT INTO productos (codigo, nombre, precio, stock)
 VALUES (108, 'Calcetines Deportivos', 9.99, 100);
 
-
+select codigo,nombre,precio,stock from productos
 select * from productos

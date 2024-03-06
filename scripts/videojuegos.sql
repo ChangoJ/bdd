@@ -36,4 +36,5 @@ VALUES (7, 'God of War', 10);
 INSERT INTO videojuegos (codigo, nombre, valoracion)
 VALUES (8, 'The Last of Us Part II', 9);
 
+select codigo,nombre,valoracion from videojuegos
 select * from videojuegos
