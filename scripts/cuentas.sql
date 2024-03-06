@@ -45,6 +45,12 @@ VALUES ('10009', '90123', 'Cuenta de ahorros', '2024-01-09', 6000.00);
 
 
 INSERT INTO cuentas (numero_cuenta, cedula_propietario, descripcion, fecha_creacion, saldo)
-VALUES ('10010', '01234', 'Cuenta corriente', '2024-01-10', 8000.75);
+VALUES ('10010', '01234', 'Cuenta corriente', '2024-0-10', 8000.75);
+
+
+SELECT numero_cuenta,saldo from cuentas 
+SELECT * FROM cuentas WHERE fecha_creacion BETWEEN NOW() - INTERVAL '2 months' AND NOW();
+SELECT numero_cuenta,saldo from cuentas  WHERE fecha_creacion BETWEEN NOW() - INTERVAL '2 months' AND NOW();
+
 
 select * from cuentas

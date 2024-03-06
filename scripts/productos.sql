@@ -34,5 +34,9 @@ VALUES (107, 'Pantalones Cortos', 24.99, 40);
 INSERT INTO productos (codigo, nombre, precio, stock)
 VALUES (108, 'Calcetines Deportivos', 9.99, 100);
 
+SELECT * from productos WHERE nombre LIKE 'Q%'
+SELECT * from productos WHERE descripcion IS null
+SELECT * from productos WHERE precio BETWEEN money(2) AND money(3)
+
 select codigo,nombre,precio,stock from productos
 select * from productos

@@ -47,4 +47,8 @@ VALUES (9, '9012345678', '2024-03-05', '10:00:00');
 INSERT INTO registro_entrada (codigo_registro, cedula_empleado, fecha, hora)
 VALUES (10, '0123456789', '2024-03-05', '10:15:00');
 
+SELECT cedula_empleado,fecha,hora FROM registro_entrada
+SELECT * FROM registro_entrada WHERE hora BETWEEN '7:00' AND '14:00'
+SELECT * FROM registro_entrada WHERE hora > '8:00'
+
 select * from registro_entrada

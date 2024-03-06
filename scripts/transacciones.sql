@@ -50,4 +50,8 @@ VALUES (9, '10009', 600.00, 'C', '2024-03-05', '18:00:00');
 INSERT INTO transacciones (codigo, numero_cuenta, monto, tipo, fecha, hora)
 VALUES (10, '10010', 800.75, 'D', '2024-03-05', '19:15:00');
 
+SELECT * FROM transacciones WHERE tipo='D'
+SELECT * FROM transacciones WHERE monto BETWEEN money(200) AND money(2000)
+SELECT codigo,monto,tipo,fecha FROM transacciones WHERE fecha IS NOT null
+
 select * from transacciones

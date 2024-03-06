@@ -41,4 +41,9 @@ VALUES ('7890123456', 'Pedro', 'Fernández', 'pedro@example.com', '1998-12-15');
 INSERT INTO estudiantes (cedula, nombre, apellido, email, fecha_nacimiento)
 VALUES ('8901234567', 'Sofía', 'Díaz', 'sofia@example.com', '2001-02-10');
 
-select * from estudiantes
+
+SELECT cedula,nombre from estudiantes
+SELECT nombre from estudiantes WHERE cedula LIKE '17%'
+SELECT nombre,apellido from estudiantes WHERE nombre LIKE 'A%'
+
+SELECT * from estudiantes
