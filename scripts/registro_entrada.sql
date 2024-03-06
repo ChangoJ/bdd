@@ -8,4 +8,43 @@ create table registro_entrada(
 	CONSTRAINT registro_entrada_pk PRIMARY KEY(codigo_registro) 
 )
 
+
+INSERT INTO registro_entrada (codigo_registro, cedula_empleado, fecha, hora)
+VALUES (1, '1234567890', '2024-03-05', '08:00:00');
+
+
+INSERT INTO registro_entrada (codigo_registro, cedula_empleado, fecha, hora)
+VALUES (2, '2345678901', '2024-03-05', '08:15:00');
+
+
+INSERT INTO registro_entrada (codigo_registro, cedula_empleado, fecha, hora)
+VALUES (3, '3456789012', '2024-03-05', '08:30:00');
+
+
+INSERT INTO registro_entrada (codigo_registro, cedula_empleado, fecha, hora)
+VALUES (4, '4567890123', '2024-03-05', '08:45:00');
+
+INSERT INTO registro_entrada (codigo_registro, cedula_empleado, fecha, hora)
+VALUES (5, '5678901234', '2024-03-05', '09:00:00');
+
+
+INSERT INTO registro_entrada (codigo_registro, cedula_empleado, fecha, hora)
+VALUES (6, '6789012345', '2024-03-05', '09:15:00');
+
+
+INSERT INTO registro_entrada (codigo_registro, cedula_empleado, fecha, hora)
+VALUES (7, '7890123456', '2024-03-05', '09:30:00');
+
+
+INSERT INTO registro_entrada (codigo_registro, cedula_empleado, fecha, hora)
+VALUES (8, '8901234567', '2024-03-05', '09:45:00');
+
+
+INSERT INTO registro_entrada (codigo_registro, cedula_empleado, fecha, hora)
+VALUES (9, '9012345678', '2024-03-05', '10:00:00');
+
+
+INSERT INTO registro_entrada (codigo_registro, cedula_empleado, fecha, hora)
+VALUES (10, '0123456789', '2024-03-05', '10:15:00');
+
 select * from registro_entrada
