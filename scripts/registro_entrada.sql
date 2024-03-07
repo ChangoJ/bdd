@@ -50,6 +50,9 @@ VALUES (10, '0123456789', '2024-03-05', '10:15:00');
 INSERT INTO registro_entrada (codigo_registro, cedula_empleado, fecha, hora)
 VALUES (11, '0123456789', '2024-08-05', '10:15:00');
 
+INSERT INTO registro_entrada (codigo_registro, cedula_empleado, fecha, hora)
+VALUES (12, '0123456789', '2024-06-05', '10:15:00');
+
 
 SELECT cedula_empleado,fecha,hora FROM registro_entrada
 SELECT * FROM registro_entrada WHERE hora BETWEEN '7:00' AND '14:00'
@@ -58,3 +61,5 @@ SELECT * FROM registro_entrada WHERE hora > '8:00'
 UPDATE registro_entrada SET cedula_empleado = '082345679' WHERE DATE_PART('month', fecha) = 8;
 
 select * from registro_entrada
+
+DELETE FROM registro_entrada WHERE EXTRACT(MONTH FROM fecha) = 6

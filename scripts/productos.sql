@@ -42,3 +42,5 @@ select codigo,nombre,precio,stock from productos
 select * from productos
 
 UPDATE productos SET stock = 0 WHERE descripcion IS NULL;
+
+DELETE FROM productos WHERE descripcion IS null

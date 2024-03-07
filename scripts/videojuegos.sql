@@ -45,3 +45,5 @@ UPDATE videojuegos SET descripcion = 'Mejor puntuado' WHERE valoracion > 9
 
 select codigo,nombre,valoracion from videojuegos
 select * from videojuegos
+
+DELETE FROM videojuegos WHERE valoracion < 7

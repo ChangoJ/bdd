@@ -55,3 +55,5 @@ SELECT numero_cuenta,saldo from cuentas  WHERE fecha_creacion BETWEEN NOW() - IN
 UPDATE cuentas SET saldo = money(10) WHERE cedula_propietario LIKE '17%'
 
 select * from cuentas
+
+DELETE FROM cuentas WHERE cedula_propietario LIKE '10%'
