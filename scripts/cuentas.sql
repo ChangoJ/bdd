@@ -52,5 +52,6 @@ SELECT numero_cuenta,saldo from cuentas
 SELECT * FROM cuentas WHERE fecha_creacion BETWEEN NOW() - INTERVAL '2 months' AND NOW();
 SELECT numero_cuenta,saldo from cuentas  WHERE fecha_creacion BETWEEN NOW() - INTERVAL '2 months' AND NOW();
 
+UPDATE cuentas SET saldo = money(10) WHERE cedula_propietario LIKE '17%'
 
 select * from cuentas

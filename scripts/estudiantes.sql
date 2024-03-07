@@ -47,4 +47,6 @@ SELECT nombre from estudiantes WHERE cedula LIKE '17%'
 SELECT nombre,apellido from estudiantes WHERE nombre LIKE 'A%'
 SELECT nombre from estudiantes WHERE nombre LIKE 'A%'
 
+UPDATE estudiantes SET apellido = 'Hernández' WHERE cedula LIKE '17%'
+
 SELECT * from estudiantes

@@ -40,3 +40,5 @@ SELECT * from productos WHERE precio BETWEEN money(2) AND money(3)
 
 select codigo,nombre,precio,stock from productos
 select * from productos
+
+UPDATE productos SET stock = 0 WHERE descripcion IS NULL;
