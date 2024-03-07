@@ -43,4 +43,14 @@ select * from productos
 
 UPDATE productos SET stock = 0 WHERE descripcion IS NULL;
 
-DELETE FROM productos WHERE descripcion IS null
+DELETE FROM productos WHERE descripcion IS null;
+
+SELECT * FROM productos
+WHERE stock = 10 AND precio < money(10);
+
+SELECT nombre, stock FROM productos
+WHERE nombre LIKE '%m%' OR descripcion LIKE '% %';
+
+SELECT nombre FROM productos
+WHERE descripcion IS NULL OR stock = 0;
+

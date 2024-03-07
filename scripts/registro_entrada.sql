@@ -63,3 +63,15 @@ UPDATE registro_entrada SET cedula_empleado = '082345679' WHERE DATE_PART('month
 select * from registro_entrada
 
 DELETE FROM registro_entrada WHERE EXTRACT(MONTH FROM fecha) = 6
+
+SELECT * FROM registro_entrada
+WHERE EXTRACT(MONTH FROM fecha) = 9 OR cedula_empleado LIKE '17%';
+
+SELECT * FROM registro_entrada
+WHERE EXTRACT(MONTH FROM fecha) = 8 
+AND cedula_empleado LIKE '17%' 
+AND hora BETWEEN '08:00:00' AND '12:00:00';
+
+SELECT * FROM registro_entrada
+WHERE (EXTRACT(MONTH FROM fecha) = 8 AND cedula_empleado LIKE '17%' AND hora BETWEEN '08:00:00' AND '12:00:00')
+OR (EXTRACT(MONTH FROM fecha) = 9 AND cedula_empleado LIKE '08%' AND hora BETWEEN '09:00:00' AND '13:00:00');

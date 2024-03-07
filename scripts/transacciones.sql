@@ -71,3 +71,14 @@ DELETE FROM transacciones WHERE  EXTRACT(HOUR FROM hora) BETWEEN 14 AND 20
 AND EXTRACT(MONTH FROM fecha) = 8 
 AND EXTRACT(YEAR FROM fecha) = EXTRACT(YEAR FROM CURRENT_DATE);
 
+
+SELECT * FROM transacciones
+WHERE tipo = 'C' AND numero_cuenta BETWEEN '22201' AND '22004';
+
+SELECT * FROM transacciones
+WHERE tipo = 'D' AND fecha = '2024-05-25' AND numero_cuenta BETWEEN '22007' AND '22010';
+
+SELECT * FROM transacciones
+WHERE codigo BETWEEN 1 AND 5 
+AND (numero_cuenta = '22002' OR numero_cuenta = '22004') 
+AND fecha IN ('2024-05-26', '2024-05-29');

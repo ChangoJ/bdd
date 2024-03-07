@@ -57,3 +57,12 @@ UPDATE cuentas SET saldo = money(10) WHERE cedula_propietario LIKE '17%'
 select * from cuentas
 
 DELETE FROM cuentas WHERE cedula_propietario LIKE '10%'
+
+SELECT numero_cuenta, saldo FROM cuentas
+WHERE saldo > money(100) AND saldo < money(1000);
+
+SELECT * FROM cuentas
+WHERE fecha_creacion BETWEEN CURRENT_DATE - INTERVAL '1 year' AND CURRENT_DATE;
+
+SELECT * FROM cuentas
+WHERE saldo = 0 OR cedula_propietario LIKE '%2';
