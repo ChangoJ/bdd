@@ -9,30 +9,25 @@ create table productos(
 	CONSTRAINT productos_pk PRIMARY KEY(codigo) 
 )
 
-INSERT INTO productos (codigo, nombre, descripcion, precio, stock)
-VALUES (101, 'Camiseta Roja', 'Camiseta de algodón en color rojo', 19.99, 50);
+CREATE TABLE ventas(
+	id_venta INT,
+	codigo_producto INT NOT null,
+	fecha_venta DATE NOT null,
+	cantidad INT,
+	CONSTRAINT ventas_pk PRIMARY KEY(id_venta)
+);
 
-INSERT INTO productos (codigo, nombre, descripcion, precio, stock)
-VALUES (102, 'Jeans Azules', 'Jeans de mezclilla en tono azul', 39.99, 30);
+ALTER TABLE ventas
+ADD CONSTRAINT ventas_codigo_producto_fk
+FOREIGN KEY(codigo_producto)
+REFERENCES productos(codigo);
 
 
-INSERT INTO productos (codigo, nombre, descripcion, precio, stock)
-VALUES (103, 'Zapatos de Cuero', 'Zapatos formales de cuero genuino', 69.99, 20);
 
-INSERT INTO productos (codigo, nombre, descripcion, precio, stock)
-VALUES (104, 'Mochila Negra', 'Mochila resistente en color negro', 29.99, 40);
+select * from ventas;
+select * from productos;
 
-INSERT INTO productos (codigo, nombre, descripcion, precio, stock)
-VALUES (105, 'Reloj Digital', 'Reloj digital con alarma y cronómetro', 15.99, 60);
 
-INSERT INTO productos (codigo, nombre, precio, stock)
-VALUES (106, 'Camiseta Verde', 14.99, 70);
-
-INSERT INTO productos (codigo, nombre, precio, stock)
-VALUES (107, 'Pantalones Cortos', 24.99, 40);
-
-INSERT INTO productos (codigo, nombre, precio, stock)
-VALUES (108, 'Calcetines Deportivos', 9.99, 100);
 
 SELECT * from productos WHERE nombre LIKE 'Q%'
 SELECT * from productos WHERE descripcion IS null
