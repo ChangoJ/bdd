@@ -33,6 +33,9 @@ SELECT * FROM personas
 SELECT * FROM prestamo
 
 
+select pe.cedula, pe.nombre, pr.monto from personas pe, prestamo pr
+where pe.cedula = pr.cedula and nombre like 'S%'
+
 
 ALTER TABLE personas 
 add column estado_civil_codigo char(1) not null;

@@ -24,7 +24,10 @@ FOREIGN KEY(codigo_profesor)
 REFERENCES Profesores(codigo);
 
 
+
+
 SELECT * from estudiantes;
+SELECT * from Profesores;
 
 SELECT cedula,nombre from estudiantes
 SELECT nombre from estudiantes WHERE cedula LIKE '17%'

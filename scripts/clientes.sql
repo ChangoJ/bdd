@@ -24,3 +24,8 @@ FOREIGN KEY(cedula)
 REFERENCES clientes(cedula);
 
 
+SELECT nombre, apellido
+FROM clientes  WHERE cedula like '%7%';
+
+SELECT *
+FROM clientes  WHERE cedula = '1777777777';

@@ -26,6 +26,7 @@ FOREIGN KEY(cedula_propietario)
 REFERENCES usuario(cedula);
 
 
+
 select * from cuentas;
 select * from usuario;
 
