@@ -1,5 +1,6 @@
 --otra forma de ingresar insert
 -- Inserts productos
+select * from productos;
 INSERT INTO productos (codigo, nombre, descripcion, precio, stock) VALUES
 (1, 'Martillo', 'Herramienta para golpear', 10.99, 50),
 (2, 'Taladro', 'Herramienta para perforar', 79.99, 20),
